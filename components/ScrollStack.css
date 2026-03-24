@@ -1,0 +1,68 @@
+.scroll-stack-container {
+  width: 100%;
+  position: relative;
+}
+
+.scroll-stack-trigger {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scroll-stack-cards-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-stack-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform-origin: top center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+  min-height: 400px;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 40px;
+  box-sizing: border-box;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scroll-stack-card h2 {
+  font-family: 'Glancyr', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(to bottom, #ffffff, #888888);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scroll-stack-card p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
